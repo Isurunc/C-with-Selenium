@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TestSystem\TestSystem.csproj" />
+    <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>
 
 </Project>

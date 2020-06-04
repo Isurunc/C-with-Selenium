@@ -1,4 +1,5 @@
 ﻿using System;
+using Framework.Selenium;
 using OpenQA.Selenium;
 
 namespace TestSystem.Pages
@@ -7,9 +8,9 @@ namespace TestSystem.Pages
 
         public readonly PageOneMap map;
 
-        public PageOne(IWebDriver driver)
+        public PageOne()
         {
-            map = new PageOneMap(driver);
+            map = new PageOneMap();
         }
 
         public void NavigatetoIndustriesPage (){
@@ -22,12 +23,7 @@ namespace TestSystem.Pages
 
     public class PageOneMap {
 
-        IWebDriver _driver ;
-        public PageOneMap (IWebDriver driver)
-        {
-            _driver = driver;
-        }
-      public IWebElement KnowledgeTabLink => _driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/knowledgebase/']"));
+      public IWebElement KnowledgeTabLink => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/knowledgebase/']"));
 
     }
 }

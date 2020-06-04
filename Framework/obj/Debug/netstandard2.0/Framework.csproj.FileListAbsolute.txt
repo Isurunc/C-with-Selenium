@@ -1,9 +1,0 @@
-D:\99x\repos\POC\Framework\bin\Debug\netstandard2.0\Framework.deps.json
-D:\99x\repos\POC\Framework\bin\Debug\netstandard2.0\Framework.dll
-D:\99x\repos\POC\Framework\bin\Debug\netstandard2.0\Framework.pdb
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.csprojAssemblyReference.cache
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.csproj.CoreCompileInputs.cache
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.AssemblyInfoInputs.cache
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.AssemblyInfo.cs
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.dll
-D:\99x\repos\POC\Framework\obj\Debug\netstandard2.0\Framework.pdb

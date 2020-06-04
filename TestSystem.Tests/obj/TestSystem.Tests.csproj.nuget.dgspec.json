@@ -42,6 +42,14 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.4, )"
+            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[3.141.0, )"
@@ -86,6 +94,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "D:\\99x\\repos\\POC\\Framework\\Framework.csproj": {
+                "projectPath": "D:\\99x\\repos\\POC\\Framework\\Framework.csproj"
+              },
               "D:\\99x\\repos\\POC\\TestSystem\\TestSystem.csproj": {
                 "projectPath": "D:\\99x\\repos\\POC\\TestSystem\\TestSystem.csproj"
               }
