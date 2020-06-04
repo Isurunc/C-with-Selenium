@@ -1,8 +1,10 @@
+using System;
 using System.IO;
 using Framework.Selenium;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 using TestSystem.Pages;
 
 namespace TestSystem.Tests
@@ -30,6 +32,7 @@ namespace TestSystem.Tests
         public void Test1(){
     
     var pagetwo = new PageTwo (); 
+
     //var Pageon = PagesWrapper.PageOne.
     pagetwo.Goto().PageOne.NavigatetoIndustriesPage ();
 

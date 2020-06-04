@@ -13,8 +13,15 @@ public static class Driver {
 //this section includes chrome driver setup implementation
 [ThreadStatic]
 public static IWebDriver _driver;
+
+//Wait 
+ [ThreadStatic]
+        public static Wait Wait; 
+
+
 public static void init () {
     _driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
+     Wait = new Wait(10);
 }
 
 
