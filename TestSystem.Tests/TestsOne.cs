@@ -39,6 +39,7 @@ namespace TestSystem.Tests
     // Assertion
     var knowledge= Driver.current.FindElement(By.CssSelector("a[href*='text']"));
     Assert.That(knowledge.Displayed);
+    Assert.That(Driver.Title, Is.EqualTo("Provide the Webpage title here"));
 }
 
 static string[] PageNames = {" PageOne", "PageTwo"};

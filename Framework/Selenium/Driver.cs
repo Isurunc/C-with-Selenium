@@ -24,6 +24,8 @@ public static void init () {
      Wait = new Wait(10);
 }
 
+//Page Title property
+public static string Title => current.Title;
 
 public static IWebDriver current => _driver ?? throw new NullReferenceException ("_driver is null");
 

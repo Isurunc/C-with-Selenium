@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Njs9dE2ojTFfUhKJKKzjTnScAKjwo5FxXxQlggnKX3knkIWaW1QWhnnMM6Na1gh2YrpecD/tUOMUKk9wdVnffA==",
+  "dgSpecHash": "1owv3CSHCQ+BP3H5JqyVJ4JybmqsWhpTZgcd5nc27IxkIf1sAmGPxeu1yj9KMyMICjnw2mGj2QEhWm9AglTG2g==",
   "success": true,
   "projectFilePath": "D:\\99x\\repos\\POC\\TestSystem.Tests\\TestSystem.Tests.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,6 @@
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.testplatform.testhost\\16.4.0\\microsoft.testplatform.testhost.16.4.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
-    "C:\\Users\\isurup\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
