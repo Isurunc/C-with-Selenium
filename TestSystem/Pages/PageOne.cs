@@ -23,7 +23,7 @@ namespace TestSystem.Pages
 
     public class PageOneMap {
 
-      public IWebElement KnowledgeTabLink => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/knowledgebase/']"));
+      public Elements KnowledgeTabLink => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/knowledgebase/']"),"insert the name of the page here");
 
     }
 }

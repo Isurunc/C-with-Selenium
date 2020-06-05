@@ -30,8 +30,9 @@ public PageTwo() : base () {
 public class PageTwoMap {
  
 
-  public IWebElement Industries => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/Industries/']"));
+  public Elements Industries => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/Industries/']"),"insert the name of the page here");
 
+  public Elements KnowledgeBase => Driver.FindElement(By.CssSelector("a[href*='https://www.vsoftconsulting.com/KnowledgeBase/']"),"insert the name of the page here");
 }
 
 

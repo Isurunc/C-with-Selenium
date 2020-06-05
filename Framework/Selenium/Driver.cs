@@ -54,9 +54,11 @@ public static void Quit()
 
 //this section includes find elements implementation
 
-public static IWebElement FindElement(By by)
+public static Elements FindElement(By by, string elementName)
 {
-    return Driver.current.FindElement(by);
+    return new Elements(current.FindElement(by),elementName) {
+        FoundBy = by
+    };
 }
 
 public static IList<IWebElement> FindElements(By by)
