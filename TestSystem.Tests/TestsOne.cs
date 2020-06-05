@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Framework;
 using Framework.Selenium;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -12,11 +13,20 @@ namespace TestSystem.Tests
     public class TestsOne
     {
 
+
+        [OneTimeSetUp]
+        public void BeforeAll(){
+        Base.CreateTestResultsDirectory();
+    }
+    
+
         [SetUp]
         public void BeforeEach(){
 
+           Base.SetLogger();
             Driver.init();
             PagesWrapper.init ();
+            Base.Log.step("User navigates to this URL");
             Driver.GotoTestEnv("https://www.vsoftconsulting.com/");
            // Driver.GotoStagingEnv ("staging url");
         

@@ -20,6 +20,7 @@ public static IWebDriver _driver;
 
 
 public static void init () {
+    Base.Log.info("Browser: Chrome invoked");
     _driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
      Wait = new Wait(10);
 }
@@ -33,15 +34,22 @@ public static IWebDriver current => _driver ?? throw new NullReferenceException 
 //this section includes navigation to web urls implementation
 public static void GotoTestEnv (String urltest) {
     //to print the url before invoke
-    Debug.WriteLine(urltest);
+    Base.Log.info(urltest);
     current.Navigate().GoToUrl(urltest);
 }
 
 public static void GotoStagingEnv (String urlstaging) {
     //to print the url before invoke
-    Debug.WriteLine(urlstaging);
+    Base.Log.info(urlstaging);
     current.Navigate().GoToUrl(urlstaging);
 }
+
+public static void Quit()
+        {
+            Base.Log.info("Browser Closed");
+            current.Quit();
+            current.Dispose();
+        }
 
 
 //this section includes find elements implementation

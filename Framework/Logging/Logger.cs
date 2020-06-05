@@ -23,23 +23,23 @@ public Logger(string testName, string filepath)
 
         }
 
-        public void Step(string message)
+        public void step(string message)
         {
             WriteLine($"..... [STEP]: {message}");
         }
 
 
-        public void Warning(string message)
+        public void warning(string message)
         {
             WriteLine($"[WARNING]: {message}");
         }
 
-        public void Error(string message)
+        public void error(string message)
         {
             WriteLine($"[ERROR]: {message}");
         }
 
-        public void Fatal(string message)
+        public void fatal(string message)
         {
             WriteLine($"[FATAL]: {message}");
         }

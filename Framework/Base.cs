@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace Framework {
 
+//this class is to create logs
     public class Base {
 
         public static string WORKSPACE_DIRECTORY = Path.GetFullPath(@"../../../../");
@@ -32,13 +33,30 @@ public static DirectoryInfo CreateTestResultsDirectory()
 
         public static void SetLogger()
     {
-         var testResultsDir = WORKSPACE_DIRECTORY + "TestResults";
+
+         lock (_setLoggerLock){
+
+            var testResultsDir = WORKSPACE_DIRECTORY + "TestResults";
             var testName = TestContext.CurrentContext.Test.Name;
             var fullPath = $"{testResultsDir}/{testName}";
 
-             CurrentTestDirectory = Directory.CreateDirectory(fullPath);
-             _logger = new Logger(testName, CurrentTestDirectory.FullName + "/log.txt");
+
+
+          if (Directory.Exists(fullPath))
+                {
+                    CurrentTestDirectory = Directory.CreateDirectory(fullPath + TestContext.CurrentContext.Test.ID);
+                }
+                else
+                {
+                    CurrentTestDirectory = Directory.CreateDirectory(fullPath);
+                }
+
+            CurrentTestDirectory = Directory.CreateDirectory(fullPath);
+            _logger = new Logger(testName, CurrentTestDirectory.FullName + "/log.txt");
         }
+    }
+
+        private static object _setLoggerLock = new object();
         
         
     }
