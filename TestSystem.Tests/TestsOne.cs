@@ -16,6 +16,8 @@ namespace TestSystem.Tests
 
         [OneTimeSetUp]
         public void BeforeAll(){
+
+        Base.SetConfig();    
         Base.CreateTestResultsDirectory();
     }
     
@@ -27,8 +29,8 @@ namespace TestSystem.Tests
             Driver.init();
             PagesWrapper.init ();
             Base.Log.step("User navigates to this URL");
-            Driver.GotoTestEnv("https://www.vsoftconsulting.com/");
-           // Driver.GotoStagingEnv ("staging url");
+            Driver.GotoTestEnv(Base.Config.Test.Url);
+           //Driver.GotoStagingEnv (Base.Config.Test.Url);
         
         }
 

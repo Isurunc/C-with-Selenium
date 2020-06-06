@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using Framework.Logging;
+using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace Framework {
@@ -12,11 +13,18 @@ namespace Framework {
 
         public static Logger Log => _logger ?? throw new NullReferenceException("_logger is null. SetLogger() first.");
 
+
+        public static frameworkConfig Config =>_configuration ?? throw new NullReferenceException ("config is null. Call Base.SetConfig() first"); 
+
+
+     
      [ThreadStatic]
     public static DirectoryInfo CurrentTestDirectory;
 
     [ThreadStatic]
     private static Logger _logger;
+
+    private static frameworkConfig  _configuration;
 
 
 public static DirectoryInfo CreateTestResultsDirectory()
@@ -29,6 +37,16 @@ public static DirectoryInfo CreateTestResultsDirectory()
             }
 
             return Directory.CreateDirectory(testDirectory);
+        }
+
+
+        public static void SetConfig (){
+
+            if (_configuration ==null) {
+
+                var jsonStr = File.ReadAllText(WORKSPACE_DIRECTORY + "/framework_config.json") ;
+                _configuration = JsonConvert.DeserializeObject<frameworkConfig>(jsonStr);
+            }
         }
 
         public static void SetLogger()

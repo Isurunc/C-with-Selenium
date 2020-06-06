@@ -20,8 +20,8 @@ public static IWebDriver _driver;
 
 
 public static void init () {
-    Base.Log.info("Browser: Chrome invoked");
-    _driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
+    
+    _driver = DriverFactory.Build(Base.Config.Driver.Browser);
      Wait = new Wait(10);
 }
 

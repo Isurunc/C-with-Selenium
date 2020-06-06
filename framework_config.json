@@ -1,0 +1,15 @@
+{
+    "driver": {
+        "browser": "chrome",
+        "waitSeconds": 10
+    },
+
+    "test": {
+        "url": "https://www.vsoftconsulting.com/"
+    },
+
+    "staging": {
+        "url": "https://www.stagingvsoftconsulting.com/"
+    }
+
+}
