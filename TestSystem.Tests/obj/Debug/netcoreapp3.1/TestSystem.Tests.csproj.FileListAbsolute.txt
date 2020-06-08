@@ -101,3 +101,4 @@ D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.cspro
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.dll
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.pdb
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.genruntimeconfig.cache
+D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll

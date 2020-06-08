@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1owv3CSHCQ+BP3H5JqyVJ4JybmqsWhpTZgcd5nc27IxkIf1sAmGPxeu1yj9KMyMICjnw2mGj2QEhWm9AglTG2g==",
+  "dgSpecHash": "eOzxhatz3J+wlxvC94aeE03d9+xXHaLXGb/I1AgPutN2hsUmFQVABEb7Qk/8scjJPAhpC4OVUAjZ9NWRUitr/Q==",
   "success": true,
   "projectFilePath": "D:\\99x\\repos\\POC\\TestSystem.Tests\\TestSystem.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\isurup\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
     "C:\\Users\\isurup\\.nuget\\packages\\microsoft.net.test.sdk\\16.4.0\\microsoft.net.test.sdk.16.4.0.nupkg.sha512",
