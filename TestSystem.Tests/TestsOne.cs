@@ -10,35 +10,8 @@ using TestSystem.Pages;
 
 namespace TestSystem.Tests
 {
-    public class TestsOne
+    public class TestsOne : TestBase
     {
-
-
-        [OneTimeSetUp]
-        public void BeforeAll(){
-
-        Base.SetConfig();    
-        Base.CreateTestResultsDirectory();
-    }
-    
-
-        [SetUp]
-        public void BeforeEach(){
-
-           Base.SetLogger();
-            Driver.init();
-            PagesWrapper.init ();
-            Base.Log.step("User navigates to this URL");
-            Driver.GotoTestEnv(Base.Config.Test.Url);
-           //Driver.GotoStagingEnv (Base.Config.Test.Url);
-        
-        }
-
-        [TearDown]
-        public void AfterEach (){
-
-            Driver.current.Quit();
-        }
 
         [Test]
         public void Test1(){
@@ -50,6 +23,7 @@ namespace TestSystem.Tests
 
     // Assertion
     var knowledge= Driver.current.FindElement(By.CssSelector("a[href*='text']"));
+    Assert.Fail();
     Assert.That(knowledge.Displayed);
     Assert.That(Driver.Title, Is.EqualTo("Provide the Webpage title here"));
 }

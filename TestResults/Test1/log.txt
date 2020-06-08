@@ -1,3 +1,3 @@
-Starting timestamp: 6/5/2020 9:32:50 AM
+Starting timestamp: 6/8/2020 10:53:57 AM
 Test: Test1
-[INFO]: Browser: Chrome invoked
+[INFO]: Browser: chrome

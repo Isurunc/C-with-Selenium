@@ -44,6 +44,17 @@ public static void GotoStagingEnv (String urlstaging) {
     current.Navigate().GoToUrl(urlstaging);
 }
 
+
+//screenshot implementation
+
+ public static void TakeScreenshot(string imageName)
+        {
+            var ss = ((ITakesScreenshot)current).GetScreenshot();
+            var ssFileName = Path.Combine(Base.CurrentTestDirectory.FullName, imageName);
+            ss.SaveAsFile($"{ssFileName}.png", ScreenshotImageFormat.Png);
+        }
+
+
 public static void Quit()
         {
             Base.Log.info("Browser Closed");
