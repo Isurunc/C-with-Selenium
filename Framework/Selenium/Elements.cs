@@ -4,6 +4,7 @@ using OpenQA.Selenium;
 
 namespace Framework.Selenium {
 
+//this class includes our own functionalities with elements. 
     public class Elements : IWebElement{
 
         private readonly IWebElement _element;

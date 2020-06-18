@@ -4,6 +4,7 @@ using OpenQA.Selenium.Firefox;
 
 namespace Framework.Selenium {
 
+//this class includes our own implementation of Drivers. ChromeDriver is implemented atm
 public static class DriverFactory{
 
 

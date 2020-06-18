@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace Framework {
 
-//this class is to create logs
+//this class includes objects that are used throughout our Framework and projects
     public class Base {
 
         public static string WORKSPACE_DIRECTORY = Path.GetFullPath(@"../../../../");

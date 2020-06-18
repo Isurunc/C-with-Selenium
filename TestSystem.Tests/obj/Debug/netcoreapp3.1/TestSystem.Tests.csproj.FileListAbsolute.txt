@@ -7,6 +7,7 @@ D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\TestSystem.Tests.runti
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\TestSystem.Tests.runtimeconfig.dev.json
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\TestSystem.Tests.dll
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\TestSystem.Tests.pdb
+D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
 D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
@@ -101,4 +102,3 @@ D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.cspro
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.dll
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.pdb
 D:\99x\repos\POC\TestSystem.Tests\obj\Debug\netcoreapp3.1\TestSystem.Tests.genruntimeconfig.cache
-D:\99x\repos\POC\TestSystem.Tests\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll

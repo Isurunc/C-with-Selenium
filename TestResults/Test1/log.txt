@@ -1,3 +1,9 @@
-Starting timestamp: 6/8/2020 10:53:57 AM
+Starting timestamp: 6/18/2020 10:16:16 AM
 Test: Test1
 [INFO]: Browser: chrome
+..... [STEP]: User navigates to this URL
+[INFO]: https://www.vsoftconsulting.com/
+..... [STEP]: Click insert the name of the page here
+..... [STEP]: Click insert the name of the page here
+[INFO]: Outcome: Failed
+[INFO]: Browser Closed

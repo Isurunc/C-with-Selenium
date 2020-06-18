@@ -3,6 +3,7 @@ using System.IO;
 
 namespace Framework.Logging {
 
+//This Logger class will handle the log.txt in test results
 public class Logger {
 
 private readonly string _filepath;
